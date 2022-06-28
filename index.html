@@ -17,14 +17,14 @@
       <div class="mt-3 col-lg-6 col-md-6 col-sm-10 col-12 m-auto">
         <div>
             <label for="exampleInputEmail1" class="form-label">First Name</label>
-            <input type="text" class="form-control" placeholder="Enter your first name" required>
+            <input type="text" class="form-control" placeholder="Enter your first name" pattern="[a-zA-Z]*" required>
             <div class="valid-feedback">First name is valid!</div>
                         <div class="invalid-feedback">First name cannot be blank!</div>
         </div>
       </div>
       <div class="mt-3 col-lg-6 col-md-6 col-sm-10 col-12 m-auto">
         <label for="exampleInputEmail1" class="form-label">Last Name</label>
-        <input type="text" class="form-control" placeholder="Enter your last name" required>
+        <input type="text" class="form-control" placeholder="Enter your last name"  pattern="[a-zA-Z]*" required>
         <div class="invalid-feedback">Input your last name</div>
         <div class="valid-feedback">Last Name is Valid</div>
       </div>
@@ -37,8 +37,8 @@
     </div>
     <div class="mt-2">
       <label>Phone</label>
-      <input type="text" class="form-control" placeholder="Enter your Phone number" required>
-      <div class="invalid-feedback">Input your Phone Number</div>
+      <input type="text" class="form-control" placeholder="Enter your Phone number" pattern="[6-9]{1}[0-9]{9}" required>
+      <div class="invalid-feedback">Input your Phone Number with 10 digits</div>
       <div class="valid-feedback">Phone Number is Valid</div>
     </div>    
     <div class="mt-2 row">
